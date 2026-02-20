@@ -18,21 +18,26 @@ header {
   background-size: cover;
   background-position: center 35%;
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   position: relative;
   text-align: center;
   color: white;
-  padding-top: 150px;
+
+  padding-top: 120px 20px 40px;
 }
 
 .hero-text {
   background: rgba(0, 0, 0, 0.55);
-  padding: 35px 60px;
+  padding: 30px;
   border-radius: 16px;
   backdrop-filter: blur(4px);
+
+  width: 100%;
   max-width: 700px;
 }
 
@@ -219,5 +224,24 @@ footer aside {
 
   #combo select {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    min-height: 85vh;
+    padding: 100px 15px 40px;
+    background-position: center;
+  }
+
+  .hero-text {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
   }
 }
